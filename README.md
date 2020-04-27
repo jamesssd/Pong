@@ -4,6 +4,7 @@
 
 * This application implements a simple command line based game.
 
+![Screenshot (6)](https://user-images.githubusercontent.com/47347463/80404970-d1775a80-8876-11ea-88d6-7597e48b4c3c.png)
 
 
 ## How To Run The Program
