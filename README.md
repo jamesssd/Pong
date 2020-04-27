@@ -4,6 +4,8 @@
 
 * This application implements a simple command line based game.
 
+
+
 ## How To Run The Program
 * Your computer **must** have [Python](https://www.python.org/downloads/) Installed. (If you do not, please click Python to download software for your computer)
 * Once Python is downloaded, download source code
