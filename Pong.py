@@ -1,6 +1,7 @@
 #turtle module allows user to add basic graphics
 import turtle 
 import winsound
+import os
 
 wn = turtle.Screen()
 wn.title("Pong by @jamessd")
@@ -94,11 +95,15 @@ while True:
         ball.sety(290)
         ball.dy *= -1
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
+        os.system("aplay bounce.wav&")
+        os.system("afplay bounce.wav&")
     
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
+        os.system("afplay bounce.wav&")
+        os.system("aplay bounce.wav&")
 
     if ball.xcor() > 390:
         ball.goto(0, 0)
@@ -121,11 +126,15 @@ while True:
         ball.setx(340)
         ball.dx *=-1
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
+        os.system("afplay bounce.wav&")
+        os.system("aplay bounce.wav&")
         
     if (ball.xcor() <-340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 50 and ball.ycor() > paddle_a.ycor() -40):
         ball.setx(-340)
         ball.dx *=-1
         winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
+        os.system("afplay bounce.wav&")
+        os.system("aplay bounce.wav&")
 
 
 
